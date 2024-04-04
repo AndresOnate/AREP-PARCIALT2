@@ -79,7 +79,7 @@ En las tres instancias, debe instalar `git`, `maven`, `java 1.8`
 
     ``` git clone https://github.com/AndresOnate/AREP-PARCIALT2.git ```
 
-       Debe modificar el atributo `mathServices` de la clase `RRInvoker` para que correspondan con los los DNS de las instancias que ejecutarán el MathService
+Debe modificar el atributo `mathServices` de la clase `RRInvoker` para que correspondan con los los DNS de las instancias que ejecutarán el MathService
 
 3. Navegue al directorio del proyecto
 
