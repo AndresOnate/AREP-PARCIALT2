@@ -3,6 +3,7 @@
 
 ## Diseño de la aplicación
 
+<img width="644" alt="descarga" src="https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/c9594515-7257-453f-b404-397496ff514c">
 
 
 ## Guía de Inicio
