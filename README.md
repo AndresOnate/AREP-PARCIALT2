@@ -49,6 +49,8 @@ Ingrese a la siguiente URL para ingresar a el cliente: `http://localhost:4567/in
 
 ![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/28910c59-9f4d-4849-8efb-6214fc06a3f2)
 
+Video con pruebas del despligue en AWS: https://youtu.be/CKKP6Wpx-V4
+
 
 ## Linear Search.  
 
