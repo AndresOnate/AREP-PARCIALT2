@@ -44,13 +44,33 @@ Las siguientes instrucciones le permitirán descargar una copia y ejecutar la ap
    
 ## Probando la Aplicación.  
 
-Ingrese a la siguiente URL para ingresar a el cliente: `` .
+Ingrese a la siguiente URL para ingresar a el cliente: `http://localhost:4567/index.html` .
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/28910c59-9f4d-4849-8efb-6214fc06a3f2)
 
 
+## Linear Search.  
 
+Ingrese en el espacio correspondiente la lista usando como separador una coma, por ejemplo `1,2,3,4,5` y el valor a buscar:
 
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/f94b9b4f-090b-45af-96cc-241e2401a708)
+
+El resultado muestra un JSON con el index del valor, en la propiedad `output`, si este es encontrado o -1 de lo contrario.
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/55ee93de-ba9a-4770-bd40-54d31596367e)
+
+## Linear Search.  
+
+Ingrese en el espacio correspondiente la lista usando como separador una coma, por ejemplo `1,2,3,4,5` y el valor a buscar:
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/b805dac2-0ea7-4ae1-9a26-11751bfe35d7)
+
+El resultado muestra un JSON con el index del valor, en la propiedad `output`, si este es encontrado o -1 de lo contrario.
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/5075c392-3d96-427b-b399-c3aff132cb5e)
 
 ## Despliegue en AWS
+
 
 
 
