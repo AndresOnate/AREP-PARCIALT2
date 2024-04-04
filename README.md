@@ -71,7 +71,48 @@ El resultado muestra un JSON con el index del valor, en la propiedad `output`, s
 
 ## Despliegue en AWS
 
+Debe contar con tres instancias para cumplir con los requisitos de la arquitetura.
 
+En las tres instancias, debe instalar `git`, `maven`, `java 1.8`
+
+1. Ubíquese sobre el directorio donde desea realizar la descarga y ejecute el siguiente comando:
+
+    ``` git clone https://github.com/AndresOnate/AREP-PARCIALT2.git ```
+
+       Debe modificar el atributo `mathServices` de la clase `RRInvoker` para que correspondan con los los DNS de las instancias que ejecutarán el MathService
+
+3. Navegue al directorio del proyecto
+
+   ``` cd AREP-PARCIALT2 ```
+
+4. Ejecute el siguiente comando para compilar:
+
+   ``` mvn clean install```
+   
+5. Ejecute el siguiente comando para  iniciar el MathService, este service se ejecutó en dos de las instancias previamente creadas:
+
+   ``` java -cp "target/classes:target/dependency/*" org.edu.eci.arep.MathService```
+
+   ![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/d02026f4-ba6c-4429-81b3-bc82a09a285c)
+
+
+4. Ejecute el siguiente comando para  iniciar el Proxy:
+
+   ``` java -cp "target/classes:target/dependency/*" org.edu.eci.arep.ServiceProxyApp ```
+
+   ![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/c53bb61a-7fb6-44d4-a73e-0a5d62f4cd12)
+
+Si los puertos no fueron configurados como variables de entorno, los puertos por defecto son `35000` para el `MathService` y `4567` para el `Proxy`
+
+Compruebe que los MathServices están funcionando de forma independiente `{dns_vm}:{port}/binarysearch?list=1,2,3,4,5&value=5`: 
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/04207c7e-07db-4e16-9c62-eb10f0d63591)
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/d2aabf72-f825-4ce3-b636-24e7e490854d)
+
+Compruebe que el Proxy está entregando el cliente web `{dns_vm}:{port}/index.html: :
+
+![image](https://github.com/AndresOnate/AREP-PARCIALT2/assets/63562181/ea0231d6-9470-4abc-8efe-825400ddb9ee)
 
 
 ## Construido Con. 
