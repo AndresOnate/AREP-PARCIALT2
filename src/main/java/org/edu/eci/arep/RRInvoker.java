@@ -10,8 +10,8 @@ public class RRInvoker {
 
 
     private static final String USER_AGENT = "Mozilla/5.0";
-    private static final String[] mathServices = {"http://ec2-3-80-60-42.compute-1.amazonaws.com:35000/",
-                                                  "http://ec2-3-88-58-203.compute-1.amazonaws.com:35000/",
+    private static final String[] mathServices = {"http://localhost:35000/",
+                                                  "http://localhost:35000/",
         };
 
     private static int currentMathService = 0;
