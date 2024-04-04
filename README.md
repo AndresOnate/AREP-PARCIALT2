@@ -39,7 +39,7 @@ Las siguientes instrucciones le permitirán descargar una copia y ejecutar la ap
 
 4. Ejecute el siguiente comando para  iniciar el Proxy:
 
-   ``` java -cp "target/classes;target/dependency/*" org.edu.eci.arep.ServiceProxyApp``
+   ``` java -cp "target/classes;target/dependency/*" org.edu.eci.arep.ServiceProxyApp ```
 
    
 ## Probando la Aplicación.  
