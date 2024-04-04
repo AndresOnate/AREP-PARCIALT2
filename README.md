@@ -1,5 +1,6 @@
 # AREP-PARCIALT2
 
+Se diseñó un prototipo de sistema de microservicios que tenga un servicio  para computar las funciones de ordenamiento.  El servicio de las funciones de ordenamiento está desplegado en  dos instancias virtuales de EC2. Adicionalmente, debe se implementó un service proxy que recibe las solicitudes de llamado desde los clientes  y se las delega a las dos instancias del servicio de ordenamiento usando un algoritmo de round-robin. El proxy está desplegado en otra máquina EC2. Los puertos pueden ser configurados de las instancias del servicio en el proxy usando variables de entorno del sistema operativo.  Finalmente, se construyó un cliente web para permitir ejecutar los servicios de busqueda linear y busqueda binaria.
 
 ## Diseño de la aplicación
 
