@@ -39,7 +39,7 @@ public class MathService {
         });
     }
 
-    
+
     private static String jsonResponse(String operation, String list, String value, String index ) {
         String response =  "{\n" +
                 " \"operation\":" + "\"" + operation +  "\"" + ",\n" +
