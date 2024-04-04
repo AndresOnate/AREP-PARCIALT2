@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<form action="/mathservices">
+    <h1>Linear Search</h1>
+    <label for="listLS">List:</label><br>
+    <input type="text" id="listLS" name="listLS"><br><br>
+    <label for="listLS">Value:</label><br>
+    <input type="text" id="valueLS" name="valueLS"><br><br>
+    <input type="button" value="Submit" onclick="loadLSGetMsg()">
+</form>
+<div id="getrespmsg"></div>
+
+
+<form action="/mathservices">
+    <h1>Binary Search</h1>
+    <label for="listLS">List:</label><br>
+    <input type="text" id="listBS" name="listBS"><br><br>
+    <label for="listLS">Value:</label><br>
+    <input type="text" id="valueBS" name="valueBS"><br><br>
+    <input type="button" value="Submit" onclick="loadBSGetMsg()">
+</form>
+<div id="getrespmsgbs"></div>
+
+<script>
+    function loadLSGetMsg() {
+        let listVar = document.getElementById("listLS").value;
+        let valueVar = document.getElementById("valueLS").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("getrespmsg").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("GET", "/mathservices?operation=linearsearch&&list=" + listVar + "&&value=" + valueVar);
+        xhttp.send();
+    }
+
+    function loadBSGetMsg() {
+        let listVar = document.getElementById("listBS").value;
+        let valueVar = document.getElementById("valueBS").value;
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("getrespmsgbs").innerHTML =
+            this.responseText;
+        }
+        xhttp.open("GET", "/mathservices?operation=binarysearch&&list=" + listVar + "&&value=" + valueVar);
+        xhttp.send();
+    }
+</script>
+</body>
+</html>
